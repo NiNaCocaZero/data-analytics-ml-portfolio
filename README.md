@@ -51,5 +51,5 @@ Each project follows the strict data-driven guidelines of the **CRISP-DM framewo
 Available for international data analytics, freelance consulting, and contract-based machine learning pipeline development.
 
 * **LinkedIn:** 
-* **Upwork Profile:** 
+* **Upwork Profile:** https://www.upwork.com/freelancers/~0123c21526592d5e51
 * **Email:** [ninacocazero@gmail.com]
