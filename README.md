@@ -7,7 +7,7 @@ Each project follows the strict data-driven guidelines of the **CRISP-DM framewo
 
 ---
 
-## 📊 Core Portfolio Projects
+##  Core Portfolio Projects
 
 ### 1. Financial Credit Risk Analytics & Multi-Model Benchmarking
 * **Domain:** Corporate Finance & Risk Management (Taiwan Credit Dataset - 30,000 records)
@@ -45,15 +45,15 @@ Each project follows the strict data-driven guidelines of the **CRISP-DM framewo
 
 ---
 
-## 📌 Executive Summary & Interactive Application
+##  Executive Summary & Interactive Application
 This project analyzes transactional donation logs to evaluate the financial and engagement impact of the **June 2026 Marketing Campaign**. It includes data hygiene auditing, outlier controls, time-bias corrections, and an interactive business dashboard.
 
-🚀 **Explore the Live Interactive Dashboard:** 👉 **[View Donor Analytics Dashboard on Streamlit Cloud](https://nini-donor-analytics-dashboard.streamlit.app/)**
+ **Explore the Live Interactive Dashboard:** 👉 **[View Donor Analytics Dashboard on Streamlit Cloud](https://nini-donor-analytics-dashboard.streamlit.app/)**
 
 ---
 ---
 
-## 🛠️ Technical Toolkit
+##  Technical Toolkit
 
 * **Languages:** Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)
 * **Frameworks & Methodologies:** CRISP-DM, Machine Learning Pipelines, Automated Preprocessing, Hyperparameter Evaluation.
