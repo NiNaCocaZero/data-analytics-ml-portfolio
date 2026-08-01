@@ -39,13 +39,6 @@ Each project follows the strict data-driven guidelines of the **CRISP-DM framewo
 
 ### 5. Donor Behavior Analysis & Pre/Post Event Evaluation
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
----
-
-##  Executive Summary & Interactive Application
 This project analyzes transactional donation logs to evaluate the financial and engagement impact of the **June 2026 Marketing Campaign**. It includes data hygiene auditing, outlier controls, time-bias corrections, and an interactive business dashboard.
 
  **Explore the Live Interactive Dashboard:** 👉 **[View Donor Analytics Dashboard on Streamlit Cloud](https://nini-donor-analytics-dashboard.streamlit.app/)**
