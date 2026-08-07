@@ -43,6 +43,14 @@ This project analyzes transactional donation logs to evaluate the financial and 
 
  **Explore the Live Interactive Dashboard:** 👉 **[View Donor Analytics Dashboard on Streamlit Cloud](https://nini-donor-analytics-dashboard.streamlit.app/)**
 
+### 6. SpaceX Falcon 9 Landing Prediction & Multi-Model Analytics
+* **Domain:** Aerospace Engineering & Advanced Predictive Analytics (IBM Capstone)
+* **Framework:** Supervised Classification (Logistic Regression, Decision Trees, SVM, KNN) & Geospatial Intelligence
+* **Technical Highlights:** Extracted and cleaned multi-source telemetry data using `BeautifulSoup` (web scraping) and SpaceX `REST APIs`. Built interactive geospatial maps (`Folium`) to evaluate launch site proximity factors and developed dynamic `Plotly/Dash` dashboards. Optimized model hyper-parameters via `GridSearchCV`.
+* **Business Outcome:** Developed a robust predictive architecture to determine first-stage rocket landing success, directly enabling cost-efficiency analysis for commercial rocket launch bidding strategies against legacy aerospace competitors.
+* **Keywords:** `Python`, `Web Scraping`, `Rest API`, `Folium`, `GridSearchCV`, `Classification Algorithms`, `Predictive Analytics`
+
+  ### 6. [SpaceX Falcon 9 Landing Prediction & Multi-Model Analytics](https://github.com/NiNaCocaZero/SpaceX-Falcon9-Predictive-Analysis)
 ---
 ---
 
