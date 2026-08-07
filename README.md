@@ -50,7 +50,7 @@ This project analyzes transactional donation logs to evaluate the financial and 
 * **Business Outcome:** Developed a robust predictive architecture to determine first-stage rocket landing success, directly enabling cost-efficiency analysis for commercial rocket launch bidding strategies against legacy aerospace competitors.
 * **Keywords:** `Python`, `Web Scraping`, `Rest API`, `Folium`, `GridSearchCV`, `Classification Algorithms`, `Predictive Analytics`
 
-  ### 6. [SpaceX Falcon 9 Landing Prediction & Multi-Model Analytics](https://github.com/NiNaCocaZero/SpaceX-Falcon9-Predictive-Analysis)
+  ### 6.👉 [SpaceX Falcon 9 Landing Prediction & Multi-Model Analytics](https://github.com/NiNaCocaZero/SpaceX-Falcon9-Predictive-Analysis)
 ---
 ---
 
