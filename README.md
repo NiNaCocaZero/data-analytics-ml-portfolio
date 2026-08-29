@@ -74,5 +74,5 @@ Every project follows the **CRISP-DM framework**, emphasizing data integrity, re
 ## 📫 Professional Engagements & Inquiries
 Available for contract roles, end-to-end dashboard development, and custom machine learning pipeline engineering.
 
-* **Upwork Profile:** [View Freelance Profile & Hire](https://www.upwork.com/freelancers/~01)
+* **Upwork Profile:** [View Freelance Profile & Hire](https://www.upwork.com/freelancers/ninidata)
 * **GitHub Portfolio:** [github.com/NiNaCocaZero](https://github.com/NiNaCocaZero)
