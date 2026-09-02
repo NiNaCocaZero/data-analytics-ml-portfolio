@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📊 Donor Behavior & Campaign Performance Dashboard")
+st.title("Donor Behavior & Campaign Performance Dashboard")
 st.markdown("Interactive analysis of donor contributions pre and post June 2026 campaign.")
 
 # --- DATA GENERATION & SIMULATION ---
@@ -87,7 +87,7 @@ with col_left:
     st.plotly_chart(fig_bar, use_container_width=True)
 
 with col_right:
-    st.subheader("📈 Monthly Trend: Average Donation Evolution")
+    st.subheader("Monthly Trend: Average Donation Evolution")
     monthly_metrics = filtered_df.groupby('month_start')['amount'].mean().reset_index()
     fig_line = px.line(
         monthly_metrics,
@@ -107,10 +107,10 @@ with col_right:
 st.divider()
 
 # --- SECTION 2: DEEP CHANNEL PERFORMANCE ANALYSIS ---
-st.subheader("🎯 Channel Effectiveness & Revenue Performance")
+st.subheader("Channel Effectiveness & Revenue Performance")
 
 # Interactive tabs for distribution (%) vs absolute revenue ($)
-tab1, tab2 = st.tabs(["📊 Channel Share (%)", "📈 Monthly Revenue Trend by Channel ($)"])
+tab1, tab2 = st.tabs(["Channel Share (%)", "Monthly Revenue Trend by Channel ($)"])
 
 pre_df = filtered_df[filtered_df['period'] == 'Pre-Event']
 post_df = filtered_df[filtered_df['period'] == 'Post-Event']
