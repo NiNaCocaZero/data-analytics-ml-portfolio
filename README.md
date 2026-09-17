@@ -1,78 +1,192 @@
 # Global Data Analytics & Business Intelligence Portfolio
-### Production-Grade Machine Learning Pipelines, Automated ETL & Executive Dashboards
 
-Welcome to my central analytics repository. This portfolio demonstrates the design and deployment of end-to-end analytical systems: from raw transactional data wrangling and statistical modeling to interactive executive dashboards and supervised machine learning architectures.
+### End-to-End Data Analytics, Business Intelligence & Predictive Modeling
 
-Every project follows the **CRISP-DM framework**, emphasizing data integrity, reproducible code architectures, and high-impact business decision support.
+Welcome to my central data analytics portfolio.
+
+This repository showcases end-to-end analytical projects covering **data cleaning and ETL, business intelligence, statistical analysis, predictive modeling, customer analytics, and interactive dashboards**.
+
+My approach focuses on turning raw and often messy data into **reliable analytical datasets, structured models, and business-ready insights**.
+
+Projects combine reproducible Python workflows with SQL, Power BI, DAX, statistical analysis, and machine learning, following the **CRISP-DM framework** where appropriate.
 
 ---
 
 ## 🚀 Featured Portfolio Projects
 
 ### 1. Online Retail Sales Analytics: Data Wrangling & Power BI Dashboard
-* **Domain:** E-Commerce & Global Retail Operations (805K+ Transactional Records)
-* **Architecture:** Decoupled Pipeline (Python Back-End ETL + Power BI Front-End Modeling)
-* **Technical Highlights:** Built an automated Pandas ETL script to clean cancelled orders, handle null customer records, and standardize float precisions. Implemented a Star Schema data model with an isolated `Calendario` dimension and engineered resilient DAX measures with dynamic `BLANK()` and `DIVIDE()` logic to prevent filter breakage.
-* **Business Outcome:** Delivered an executive 3-page reporting suite tracking Total Revenue ($18M), Orders (37K), and Retention (72%) with responsive tooltips and dynamic Month-over-Month (MoM%) performance indicators.
-* **Tech Stack:** `Python`, `Pandas`, `Power BI`, `DAX`, `Data Wrangling`, `Star Schema`, `UI/UX Design`
 
-### 2. Financial Credit Risk Analytics & Multi-Model Benchmarking
-* **Domain:** Corporate Finance & Risk Management (Taiwan Credit Dataset - 30,000 records)
-* **Framework:** Supervised Binary Classification (Logistic Regression, Decision Trees, Random Forest)
-* **Technical Highlights:** Mitigated extreme class imbalance using automated cost-sensitive learning (`class_weight='balanced'`). Engineered domain-specific metrics (`UTILIZATION_RATE`) to isolate financial exposure thresholds.
-* **Business Outcome:** Selected **Random Forest** as the champion model (**0.761 ROC-AUC**), optimizing the precision-recall frontier to capture high-risk defaulters while minimizing false alarms for credit underwriters.
-* **Tech Stack:** `Python`, `Scikit-Learn`, `Class Imbalance`, `Feature Engineering`, `ROC-AUC`, `Financial Risk`
+**Domain:** E-Commerce & Global Retail Operations
+**Dataset:** 805K+ transactional records
 
-### 3. Customer Segmentation via RFM Behavioral Clustering
-* **Domain:** E-Commerce & Growth Marketing Operations
-* **Framework:** Unsupervised Machine Learning (K-Means Clustering)
-* **Technical Highlights:** Implemented feature standardization via `StandardScaler` to remove distance metric bias. Evaluated cluster quality via the **Elbow Method (Inertia)** and **Silhouette Coefficient Analysis** to establish optimal cluster boundaries at $K=3$.
-* **Business Outcome:** Segmented customers into three distinct lifecycle cohorts (*Dormant/At-Risk*, *High-Value Loyalists*, and *Recent Core Buyers*) to drive automated re-engagement workflows and loyalty incentives.
-* **Tech Stack:** `Python`, `K-Means`, `Unsupervised Learning`, `RFM Modeling`, `Silhouette Analysis`
+**Objective:** Transform a large transactional dataset into a reliable analytical model and executive reporting system for monitoring revenue, products, customers, and markets.
 
-### 4. Healthcare Churn Predictive Modeling & Patient Retention
-* **Domain:** Private Healthcare Insurance & Subscription Retention
-* **Framework:** Ensemble Machine Learning (Random Forest Classifier)
-* **Technical Highlights:** Handled multi-variable demographic telemetry using stratified partitions. Analyzed continuous Precision-Recall curves and extracted structural **Feature Importance** matrices to determine attrition drivers.
-* **Business Outcome:** Isolated operational friction points (`Customer_Service_Calls`) over pricing elasticity as the primary attrition factor, enabling early intervention playbooks before subscription renewal cycles.
-* **Tech Stack:** `Python`, `Scikit-Learn`, `Random Forest`, `Precision-Recall`, `Feature Importance`
+* **Data Pipeline:** Python/Pandas ETL for cleaning transactional data, handling cancelled invoices, managing missing customer records, and standardizing numeric data.
+* **Data Modeling:** Designed a Star Schema with a dedicated Calendar dimension and structured fact/dimension relationships.
+* **BI Development:** Built Power BI measures using DAX, including dynamic `DIVIDE()` and `BLANK()` logic for robust KPI calculations.
+* **Dashboard:** Developed a 3-page executive reporting suite covering revenue trends, product performance, customer behavior, and market performance.
+* **Business Metrics:** Revenue, orders, customer retention, average order value, product performance, and Month-over-Month trends.
+* **Scale:** 805K+ transactional records, approximately $18M in revenue, and 37K orders.
 
-### 5. Predictive Sales Forecasting & Supply Chain Optimization
-* **Domain:** Retail Logistics & Inventory Planning
-* **Framework:** Multivariate Linear Regression (Ordinary Least Squares - OLS)
-* **Technical Highlights:** Executed multivariate Pearson correlation diagnostics to isolate price elasticity and seasonal trends without multi-collinearity variance.
-* **Business Outcome:** Achieved an **$R^2$ score of 0.960** with a **Mean Absolute Error (MAE) of 98.76 units**, establishing an automated stock reordering threshold that minimizes dead inventory overhead.
-* **Tech Stack:** `Python`, `Linear Regression`, `Pearson Correlation`, `Demand Forecasting`, `Supply Chain`
+**Tech Stack:** `Python` `Pandas` `Power BI` `DAX` `Star Schema` `ETL` `Data Wrangling` `UI/UX`
 
-### 6. Donor Behavior Analysis & Campaign Impact Assessment
-* **Domain:** Non-Profit Fundraising & Campaign Performance
-* **Framework:** Time-Series Behavioral Analytics & Interactive Web Application
-* **Technical Highlights:** Audited transactional donation logs, corrected temporal anomalies, and deployed a production web app for dynamic segment exploration.
-* **Business Outcome:** Delivered an interactive analytics dashboard isolating donor acquisition cohorts and retention shifts following the June 2026 campaign.
-* **Tech Stack:** `Python`, `Streamlit Cloud`, `Data Hygiene`, `Cohort Analysis`, `Interactive Viz`
-* **Live App:** 👉 **[View Donor Analytics Dashboard on Streamlit Cloud](https://nini-donor-analytics-dashboard.streamlit.app/)**
+---
+
+### 2. Predictive Sales Forecasting & Supply Chain Analysis
+
+**Domain:** Retail Logistics & Inventory Planning
+
+**Objective:** Analyze historical sales patterns and build a predictive model to estimate future demand and support inventory planning.
+
+* **Model:** Multivariate Linear Regression using Ordinary Least Squares.
+* **Analysis:** Investigated relationships between sales, marketing activity, pricing, and seasonal patterns.
+* **Model Evaluation:** Achieved an **R² of 0.960** with a **Mean Absolute Error (MAE) of 98.76 units**.
+* **Business Application:** Used predictive results to support demand planning and inventory-related decision making.
+
+**Tech Stack:** `Python` `Pandas` `Scikit-Learn` `Linear Regression` `Correlation Analysis` `Demand Forecasting`
+
+---
+
+### 3. Donor Behavior Analysis & Campaign Impact Assessment
+
+**Domain:** Non-Profit Fundraising & Campaign Performance
+
+**Objective:** Analyze donor behavior before and after a campaign launch and provide an interactive tool for exploring campaign performance.
+
+* Audited transactional donation data and addressed temporal and data-quality issues.
+* Compared donor behavior before and after the June 2026 campaign.
+* Analyzed acquisition and retention patterns across donor segments.
+* Built and deployed an interactive Streamlit dashboard for dynamic exploration.
+* Identified measurable changes in channel performance following the campaign period.
+
+**Tech Stack:** `Python` `Pandas` `Streamlit` `Data Cleaning` `Cohort Analysis` `Interactive Visualization`
+
+**Live App:**
+https://nini-donor-analytics-dashboard.streamlit.app/
+
+---
+
+### 4. Customer Segmentation via RFM Behavioral Clustering
+
+**Domain:** E-Commerce & Customer Analytics
+
+**Objective:** Segment customers according to purchasing behavior to support differentiated retention and engagement strategies.
+
+* Built RFM features based on **Recency, Frequency, and Monetary Value**.
+* Standardized features using `StandardScaler`.
+* Applied K-Means clustering to identify behavioral customer groups.
+* Evaluated candidate cluster configurations using the **Elbow Method** and **Silhouette Coefficient**.
+* Identified three main customer lifecycle segments, including high-value, recent, and at-risk customers.
+
+**Tech Stack:** `Python` `Pandas` `Scikit-Learn` `K-Means` `RFM Analysis` `Customer Segmentation`
+
+---
+
+### 5. Financial Credit Risk Analytics & Multi-Model Benchmarking
+
+**Domain:** Financial Risk Management
+**Dataset:** Taiwan Credit Dataset, 30,000 records
+
+**Objective:** Compare classification models for predicting credit default risk while accounting for class imbalance.
+
+* Compared Logistic Regression, Decision Tree, and Random Forest models.
+* Addressed class imbalance using cost-sensitive learning with `class_weight='balanced'`.
+* Engineered financial features including `UTILIZATION_RATE`.
+* Evaluated model performance using ROC-AUC and classification metrics.
+* Random Forest achieved the highest ROC-AUC among the evaluated models at **0.761**.
+
+**Tech Stack:** `Python` `Scikit-Learn` `Random Forest` `Logistic Regression` `Decision Trees` `Feature Engineering` `ROC-AUC`
+
+---
+
+### 6. Healthcare Churn Predictive Modeling & Patient Retention
+
+**Domain:** Private Healthcare Insurance & Customer Retention
+
+**Objective:** Identify patterns associated with customer churn and evaluate a predictive classification approach.
+
+* Built a Random Forest classification model using a simulated healthcare customer dataset.
+* Used stratified train/test splitting and class balancing techniques.
+* Evaluated performance using classification metrics and Precision-Recall analysis.
+* Examined feature importance to identify variables associated with predicted churn.
+* The analysis highlighted customer service interactions as an important predictive variable within the simulated dataset.
+
+**Tech Stack:** `Python` `Pandas` `Scikit-Learn` `Random Forest` `Precision-Recall` `Feature Importance`
+
+---
 
 ### 7. SpaceX Falcon 9 First-Stage Landing Prediction
-* **Domain:** Aerospace Telemetry & Advanced Predictive Analytics (IBM Capstone)
-* **Framework:** Supervised Multi-Model Classification (Logistic Regression, Trees, SVM, KNN)
-* **Technical Highlights:** Extracted telemetry data using `BeautifulSoup` and REST APIs. Built interactive geospatial maps (`Folium`) for launch-site spatial analysis and fine-tuned models via `GridSearchCV`.
-* **Business Outcome:** Engineered a high-accuracy predictive classification pipeline to determine first-stage rocket recovery feasibility, enabling commercial launch cost benchmarking.
-* **Tech Stack:** `Python`, `REST API`, `Web Scraping`, `Folium`, `GridSearchCV`, `Classification`
-* **Repository:** 👉 **[View SpaceX Falcon 9 Project Repository](https://github.com/NiNaCocaZero/SpaceX-Falcon9-Predictive-Analysis)**
+
+**Domain:** Aerospace & Predictive Analytics
+**Project:** IBM Data Science Capstone
+
+**Objective:** Build a machine learning pipeline to predict whether a Falcon 9 first stage would successfully land.
+
+* Collected data through REST APIs and web scraping with `BeautifulSoup`.
+* Cleaned and transformed launch data for analysis.
+* Performed exploratory and geospatial analysis using `Folium`.
+* Compared multiple classification algorithms.
+* Tuned model hyperparameters using `GridSearchCV`.
+
+**Tech Stack:** `Python` `REST APIs` `BeautifulSoup` `Folium` `Scikit-Learn` `GridSearchCV` `Classification`
+
+**Repository:**
+https://github.com/NiNaCocaZero/SpaceX-Falcon9-Predictive-Analysis
 
 ---
 
 ## 🛠️ Technical Stack & Tooling
 
-* **Languages & Core Libraries:** Python (`Pandas`, `NumPy`, `Scikit-Learn`, `SciPy`)
-* **Business Intelligence & Visualization:** Power BI, DAX, Star Schema Modeling, Streamlit, Matplotlib, Seaborn, Folium, Plotly
-* **Data Engineering & ETL:** Automated Preprocessing Scripts, Feature Engineering, REST APIs, Web Scraping (`BeautifulSoup`)
-* **Methodologies:** CRISP-DM, Supervised/Unsupervised Machine Learning, Hypothesis Testing, Time-Series Analysis
+### Data Analysis & Programming
+
+* Python
+* Pandas
+* NumPy
+* SQL
+* Scikit-Learn
+* SciPy
+
+### Business Intelligence & Visualization
+
+* Power BI
+* DAX
+* Star Schema Modeling
+* Streamlit
+* Matplotlib
+* Seaborn
+* Plotly
+* Folium
+
+### Data Preparation & ETL
+
+* Data Cleaning
+* Automated Python ETL Workflows
+* Feature Engineering
+* REST APIs
+* Web Scraping
+* BeautifulSoup
+
+### Analytical Methods
+
+* CRISP-DM
+* Statistical Analysis
+* Hypothesis Testing
+* Time-Series Analysis
+* Supervised Machine Learning
+* Unsupervised Machine Learning
+* Customer Segmentation
+* Predictive Modeling
 
 ---
 
-## 📫 Professional Engagements & Inquiries
-Available for contract roles, end-to-end dashboard development, and custom machine learning pipeline engineering.
+## 📫 Professional Engagements
 
-* **Upwork Profile:** [View Freelance Profile & Hire](https://www.upwork.com/freelancers/ninidata)
-* **GitHub Portfolio:** [github.com/NiNaCocaZero](https://github.com/NiNaCocaZero)
+Available for **Data Analyst, Business Intelligence, dashboard development, data cleaning, ETL, and analytical projects**.
+
+I am also expanding my expertise in **Data Engineering**, with a focus on data pipelines, relational databases, and cloud-based data platforms.
+
+**Upwork:**
+https://www.upwork.com/freelancers/ninidata
+
+**GitHub:**
+https://github.com/NiNaCocaZero
